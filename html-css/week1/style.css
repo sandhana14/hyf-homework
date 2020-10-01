@@ -1,0 +1,103 @@
+body{
+    border:solid;
+    border-width:2px;
+}
+.container-top{
+    background-color:#be89b6;
+    width:100%;
+    height:100px;
+    position:relative;
+    bottom:22px;
+    font-family:Arial, sans-serif;
+}
+.name{
+    text-align:center;
+    text-decoration: underline;
+}
+.job-name{
+    text-indent:33%;
+}
+#container-left{
+    background-color:#c5a8ce;
+    float:left;
+    width:320px;
+    position:absolute;
+    top:10px;
+    line-height:1.5em;
+    font-family:Arial, sans-serif;
+}
+.Picture{
+    border:solid;
+    border-width:0.2px;
+    position:relative;
+    left:50px;
+}
+.container{
+    width:90%;
+    border-radius: 25px;
+    background-color:#87CEEB;
+    height:12px;
+    position:relative;
+    bottom:15px;
+}
+.skills{
+    color:white;
+    text-align:right;
+    height:12px;
+    background-color:#4682B4;
+    border-radius: 25px;
+    font-size:10px;
+    line-height:1.5em;
+}
+.C{
+    width:80%;
+}
+.Python{
+    width:60%;
+}
+.HTML{
+    width:50%;
+}
+.CSS{
+    width:50%;
+}
+.Tamil{
+    width:100%;
+}
+.English{
+    width:95%;
+}
+.Danish{
+    width:80%;
+}
+#container-right{
+    padding-left: 330px;
+    background-color: #FFFAFA;
+    line-height: 1.5em;
+    font-family:Arial, sans-serif;
+}
+h2{
+    background-color:#DCDCDC;
+    text-transform:uppercase;
+    text-shadow:1px 1px 2px;
+    font-style:italic;
+    font-weight:bold;
+    font-size:15px;
+    font-family:Arial, sans-serif; 
+    padding:5px;
+}
+address img{
+    position: relative;
+    top:7px;
+}
+footer p{
+    word-spacing:9px;
+    font-size:15px;
+    text-align:center;
+    opacity:0.5;
+}
+#degree{
+    position:relative;
+    left:30px;
+}
+
