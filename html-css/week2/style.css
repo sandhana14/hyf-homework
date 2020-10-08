@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;  
+    line-height: 1.3em;
+}
+.header-title{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left: 100px;;
+    height:130px;
+    background-color:#F5F5F5;
+}
+.header-title h1,h2,h4{
+    text-transform: uppercase;
+}
+.header-nav-links ul li a {
+    float:left;
+    color: black;
+    padding:20px 0px 20px 100px;
+}
+.picture-of-college{
+    width:100%;
+    height:450px;
+}
+/*Paragraphs and icons*/
+.paragraphs .practical-web-development p,
+.paragraphs .web-development p,
+.paragraphs .the-gallery p,
+.logotypes .icons img{
+    margin-top:10px;
+}
+.paragraphs{
+    margin:0px 80px;
+}
+.web-development,.the-gallery{
+    float:left;
+    width:350px;
+    height:500px;
+    padding:10px;
+}
+.practical-web-development,.logotypes{
+    float:right;
+    width:700px;
+    height:500px;
+    padding:10px 0px 10px 60px;
+}
+div.icons img{
+    width:80px;
+    height:80px;
+    margin:30px;
+}
+/*Footer CSS starts here*/
+.footer{
+    clear:both;
+    background:#6949a8;
+    padding: 20px 100px 10px 100px;
+    color:white;
+}
+.footer .footer_menu{
+    display:flex;
+    margin-bottom: 10px;
+    justify-content:space-between;
+}
+.footer .footer_menu .title{
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+.footer .footer_menu ul li{
+    margin-bottom:10px;
+}
+.footer .footer_menu ul>li a {
+    margin-bottom:10px;
+    color:white;
+}
+.google-maps{
+    width:250px;
+    height:200px;
+    border:0;
+}
+hr{
+    border-style: solid;
+    border-width: 0.1px;
+    color:#F5F5F5;
+    opacity:0.3;
+}
+@media screen and (max-width: 680px) {
+    .header-title{
+        width:100%;
+        padding-left:20px;
+    }
+    .header-title h1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .header-title p{
+        font-size: 12px;
+    }
+    .header-nav-links ul li a {
+        float:left;
+        width:100%;
+        padding-left:20px;
+    }
+    h2{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .paragraphs{
+        margin:0px 10px;
+    }
+    .web-development,
+    .practical-web-development,
+    .the-gallery,
+    .logotypes{
+        float:left;
+        width:100%;
+        height:auto;
+        padding:10px;
+    }
+    div.icons img{
+        width:50px;
+        height:50px;
+        margin:15px;
+    }
+    .flex-container{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .footer{
+        clear:both;
+        padding-left:10px;
+    }
+    .footer .footer_menu{
+        display:flex;
+        flex-direction:column;
+        align-content:space-between;
+    }
+    .google-maps{
+        width:100px;
+        height:100px;
+    }
+    .footer .footer_menu .title{
+        margin-top:40px;
+    }
+}
