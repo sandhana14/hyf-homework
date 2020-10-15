@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width">
+        <title>CustomTailor-page4</title>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30143400/210-768x591.png" alt="Shopping-logo" class="image-logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Returns & Orders</li>
+                    <li>Shopping basket</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <article>
+            <h1>Sign up to yourcustomtailor.com</h1>
+            <h3>Step 4/4- Payment</h3>
+            </article>
+            <form action="#" method="GET">
+                <div class="progressbar">
+                <label for="file" >progress</label>
+                <progress id="file" value="90" max="100"> 90% </progress>
+                </div> 
+                <div class="one-line-para"> 
+                <p>Please fill in your payment data</p>
+                </div>
+                <div class="personal-info">
+                <label for="nameoncard">Name on card*</label>
+                <input type="text" name="nameoncard" id="nameoncard" required>
+                </div>
+                <div class="personal-info">
+                <label for="cardtype">Card type*</label>
+                <select name="cardtype" id="cardtype">
+                <option value="cardtype">Select card type</option>
+                <option value="creditcard">Credit card</option>
+                <option value="debitcard">Debit card</option>
+                </select>
+                </div>
+                <div class="personal-info">
+                <label for="creditcardnumber">Credit card number*</label>
+                <input type="text" maxlength="16" name="creditcardnumber" id="creditcardnumber"  pattern="[0-9]{16}" title="Please enter exactly 16 digits" required>
+                <label for="firstname">First name*</label>
+                <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="personal-info expiry-month-year">
+                <label for="expirymonth">Expiry month*</label>
+                <input type="number" name="expirymonth" id="expirymonth" min="1" max="12" required>
+                <label for="expiryyear">Expiry year*</label>
+                <input type="number" name="expiryyear" id="expiryyear" min="2020" max="2050" required>
+                </div>  
+                <div class="personal-info ccv">
+                <label for="ccv">CCV*</label>
+                <input type="text" name="ccv" id="ccv" maxlength="3"  pattern="^[0-9]{3}" title="Please enter exactly 3 digits"required>
+                </div>
+                
+                <div class="next-btn">
+                    <input type="submit" name="button" value="Next step" class="button-next">
+                </div>
+                
+            </form>
+        </main>
+
+    </body>
+</html>

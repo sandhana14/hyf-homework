@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width">
+        <title>CustomTailor</title>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30143400/210-768x591.png" alt="Shopping-logo" class="image-logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Returns & Orders</li>
+                    <li>Shopping basket</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <article>
+            <h1>Sign up to yourcustomtailor.com</h1>
+                <p>We can't wait to help you improve your life-style and gain the attention from people around you!
+                    <br><br>Sign up below to save up to 70% on apparel,hand-bags and cosmetics.Our agents are busy picking the best offers that match  your preferences and style.Every week we will send you a hand-picked selection-we just need to know a few details about your first... 
+                </p>
+                <h3>Step 1/4- tell us who you are?</h3>
+            </article>
+            <form action="page2.html" method="GET">
+                <div class="progressbar">
+                <label for="file" >progress</label>
+                <progress id="file" value="25" max="100"> 25% </progress>
+                </div> 
+                <div class="one-line-para"> 
+                <p>Nice to meet you.Let's spend a minute to get to know each other?Please enter the following:</p>
+                </div>
+                <div class="personal-info">
+                <label for="firstname">First name*</label>
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="lastname">Last name*</label>
+                <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="personal-info">
+                <label for="country">Country*</label>
+                <select name="country" id="country">
+                    <option value="countryselect">Select Country</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="india">India</option>
+                    <option value="america">America</option>
+                    <option value="australia">Australia</option>
+                    <option value="china">China</option>
+                    <option value="italy">Italy</option>
+                    </select>
+                </div>
+                <div class="personal-info" >
+                <label for="streetaddress">Street address*</label>
+                <input type="text" name="streetaddress" id="streetaddress" required>
+                <label for="postcode">Post code*</label>
+                <input type="text" name="postcode" id="postcode" pattern="\d{4}" maxlength="4" title="Please enter only digits" required>
+                </div>
+                <div class="personal-info">
+                <label for="profiledescription">Profile description<br><br><span><em>Please provide a short description of yourself to be displayed on our social community pages.</em></span></label>
+                <textarea maxlength="500" name="profiledescription" id="profiledescription"></textarea>
+                </div>
+                <div class="one-line-para">
+                <p>Use the same address for billing and shipping?Uncheck below to fill out a seperate shipping address.</p>
+                </div>
+                
+                <div class="personal-info1">
+                    <label class="label-checkbox-shippping" for="checkboxshipping">Shipping address</label>
+                    <input type="checkbox" name="shippingaddress" id="checkboxshipping" checked="checked">
+                   
+                <!--Shipping address has to show up when the checkbox is unchecked-->
+                <div class="shippingaddress">
+                    <h4>Shipping address</h4>
+                <div class="personal-info">
+                <label for="firstname">First name*</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="lastname">Last name*</label>
+                <input type="text" name="lastname" id="lastname">
+                </div>
+                <div class="personal-info">
+                    <label for="country">Country*</label>
+                    <select name="country" id="country">
+                        <option value="countryselect">Select Country</option>
+                        <option value="denmark">Denmark</option>
+                        <option value="india">India</option>
+                        <option value="america">America</option>
+                        <option value="australia">Australia</option>
+                        <option value="china">China</option>
+                        <option value="italy">Italy</option>
+                        </select>
+                </div>
+                <div class="personal-info" >
+                <label for="streetaddress">Street address*</label>
+                <input type="text" name="streetaddress" id="streetaddress">
+                <label for="postcode">Post code*</label>
+                <input type="text" name="postcode" id="postcode" pattern="\d{4}" maxlength="4" title="Please enter only digits">
+                </div>
+                <div class="personal-info">
+                <label for="profiledescription">Profile description<br><br><span><em>Please provide a short description of yourself to be displayed on our social community pages.</em></span></label>
+                <textarea maxlength="500" name="profiledescription" id="profiledescription"></textarea>
+                </div>
+                </div>
+            </div> 
+            
+                <div class="next-btn">
+                    <input type="submit" name="button" value="Next step" class="button-next">
+                </div>
+            </form>
+        </main>
+
+    </body>
+</html>
