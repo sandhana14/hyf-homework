@@ -1,0 +1,31 @@
+<head>
+    <title>HyfBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <header class="header-logo-title">
+            <img src="https://img.icons8.com/bubbles/50/000000/shopify.png"/>
+            <h2 >hyfBay - get the okay'est products here </h2>
+        </header>
+        <div class="search-bar">
+            <input type="text" id="search-product-field" placeholder = "Search for a product">
+            <input type="text" id="search-price-field" placeholder = "Set maximum price">
+            <input type="text" id="search-ratings-field" placeholder = "Ratings">
+            <div class = "sorting">
+            <label>Sort by price</label>
+            <select id="sortByPrice">
+                <option>select the type</option>
+                <option value="high">High price to low price</option>
+                <option value="low">Low price to high price</option>
+            </select>
+        </div>
+        </div>
+        <ul></ul>
+    </main>
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+</body>
