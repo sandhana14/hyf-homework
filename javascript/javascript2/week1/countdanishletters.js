@@ -2,15 +2,11 @@
 function findDanishLetters(str) {
     const find = str.split("");
     const obj = {};
-    let count = 1;
+    let count = 0;
     for (let i = 0; i < find.length; i++) {
-        if (
-            find[i].includes("ø") ||
-            find[i].includes("å") ||
-            find[i].includes("æ")
-        ) {
+        if (find[i] === "ø" ||find[i] === "å"||find[i] === "æ"){
             const char = find[i];
-            obj.total = count++;
+            obj.total = ++count;
             if (obj[char]) {
                 obj[char]++;
             } else {
