@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="spirit">Possibility to select when the spirit animal should be created.</label>
+        <select id="mySelectedOptions" name="mySelectedOptions" onchange="myFuction()">
+            <option>select the type</option>
+            <option value="clicks">User clicks the button</option>
+            <option value="hovers">User hovers the input field</option>
+            <option value="input">Text is written in the input field</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname"><br><br>
+        <br>
+        <button type="button" id="button">Click me!</button>
+        <button type="button" id="button1">Click me,If you are not satisfied with the spirit animal name!</button>
+    </form>
+    <br>
+    <p>The spirit animal name is :
+        <span id="result"></span>
+    </p>
+    <script src="spiritanimalgenerator.js"></script>
+</body>
+
+</html>
