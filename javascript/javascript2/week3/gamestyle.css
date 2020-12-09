@@ -1,0 +1,79 @@
+* {
+  font-style: oblique;
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+}
+#countdownTimer {
+  margin-left: 600px;
+  background-color: palegreen;
+  color: black;
+  width: 150px;
+}
+#buttonStartGame {
+  color: black;
+  background-color: #48d1cc;
+}
+.verticalLine {
+  border-left: 3px ridge black;
+  position: relative;
+  top: -10px;
+  left: 670px;
+  height: 300px;
+}
+.horizontalLine {
+  border: 3px solid black;
+  width: 550px;
+}
+.pressS {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+}
+.pressL {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+#pressKeyS {
+  position: absolute;
+  left: 36%;
+  top: 55%;
+}
+#presskeyL {
+  position: absolute;
+  left: 61%;
+  top: 55%;
+}
+h1 {
+  color: red;
+}
+#result {
+  position: absolute;
+  left: 58%;
+  top: 32%;
+  color: blueviolet;
+}
+#errorMessage {
+  position: absolute;
+  left: 32%;
+  top: 19%;
+}
+#restartButton {
+  background-color: aqua;
+}
+#my-canvas {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  top: 290px;
+  left: 390px;
+}
+#my-canvas1 {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  top: 290px;
+  left: 680px;
+}
