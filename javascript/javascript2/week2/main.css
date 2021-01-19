@@ -1,0 +1,44 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFA07A;
+}
+* {
+    box-sizing: border-box;
+}
+body,h1,h2 {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.header-logo-title{
+    background-color: lightcoral;
+    height:13%;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align:center;
+}
+.search-bar{
+    height:10%;
+    background-color: #CD5C5C;
+}
+#search-product-field,
+#search-price-field,
+#search-ratings-field{
+    background-image: url("icons8-search-50.png");
+    background-repeat: no-repeat;
+    float:right;
+    width: 20%;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid black;
+    margin:10px 10px 12px 0px;
+}
+.sorting label,select{
+    position: relative;
+    top:16px;
+    font-size: 20px;
+    padding-left: 10px;
+}
