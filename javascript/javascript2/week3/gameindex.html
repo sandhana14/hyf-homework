@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="gamestyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="my-canvas"></canvas>
+    <canvas id="my-canvas1"></canvas>
+    <div class="container">
+        <h1 id="countdownTimer"></h1>
+        <h2>Fastest presser</h2>
+        <input type="number" id="inputFieldSetSeconds" placeholder="Set seconds" min="0">
+        <br>
+        <br>
+        <button id="buttonStartGame">Start game!</button>
+        <br>
+        <br>
+        <h1 id="messageTimesUp"></h1>
+        <hr class="horizontalLine">
+        <div class="verticalLine"></div>
+        <h4 class="pressS">Press S</h4>
+        <h4 class="pressL">Press L</h4>
+        <p id="pressKeyS"></p>
+        <p id="presskeyL"></p>
+        <h1 id="result"></h1>
+        <h2 id="errorMessage"></h2>
+        <button id="restartButton">Press this button to restart the game</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+    <script src="gamescript.js"></script>
+</body>
+
+</html>
