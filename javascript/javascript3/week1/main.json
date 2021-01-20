@@ -1,0 +1,38 @@
+{
+    "pets" : [
+        {
+            "name" : "Jimmy",
+            "species":"Dog",
+            "color":["Black","Brown"],
+            "legs":4,
+            "favourite foods":["Bones","Dog food","Meat"],
+            "breed":"German shepherd",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg",
+            "price":1000,
+            "behaviour":"Ferocious"
+        },
+        {
+            "name" : "Kitty",
+            "species":"Cat",
+            "color":["White"],
+            "legs":4,
+            "favourite foods":["Fish","Cat food"],
+            "breed":"Persian Cat",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/1/15/White_Persian_Cat.jpg",
+            "price":3000,
+            "behaviour":"Quiet and Sweet"
+        },
+        {
+            "name" : "Rosy",
+            "species":"Parrot",
+            "color":["Green","Red","Black"],
+            "legs":2,
+            "favourite foods":["Fruits","vegetables","Seeds","Grains"],
+            "breed":"Rose-ringed parakeet",
+            "image":"https://petsoid.com/wp-content/uploads/2019/12/Indian-Ring-Necked-Parakeet-green.jpg",
+            "price":500,
+            "behaviour":"Samrt and Sweet"
+        }
+    ]
+}
+
