@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "content": "Best meal ever",
+    "numberOfStars": 3,
+    "mealId": 1,
+    "createdDate": "2021-01-29"
+  },
+  {
+    "id": 2,
+    "content": "tasty",
+    "numberOfStars": 3,
+    "mealId": 1,
+    "createdDate": "2021-01-29"
+  },
+  {
+    "id": 3,
+    "content": "Amazing taste",
+    "numberOfStars": 5,
+    "mealId": 2,
+    "createdDate": "2021-01-28"
+  }
+  ,
+  {
+    "id": 4,
+    "content": "Delicious",
+    "numberOfStars": 5,
+    "mealId": 3,
+    "createdDate":"2021-01-30"
+  }
+  ,
+  {
+    "id": 5,
+    "content": "Not bad",
+    "numberOfStars": 2,
+    "mealId": 5,
+    "createdDate": "2021-01-31"
+  }
+]
