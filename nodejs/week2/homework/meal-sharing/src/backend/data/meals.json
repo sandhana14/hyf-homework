@@ -1,0 +1,52 @@
+[
+    {
+        "id" : 1,
+        "title" : "Best ever cheese grits",
+        "description" : "Made up of cheddar cheese and chicken broth",
+        "location":"Hedehusene",
+        "when":"2021-01-28 13:15:00",
+        "maxNumberOfGuests" : 25,
+        "price" : 150,
+        "createdAt" : "2021-01-10"
+    },
+    {
+        "id" : 2,
+        "title" : "Chicken briyani",
+        "description" : "Made up of rice and chicken",
+        "location":"Copenhagen",
+        "when":"2021-01-27 13:00:00",
+        "maxNumberOfGuests" : 20,
+        "price" : 100,
+        "createdAt" : "2020-12-10"
+    },
+    {
+        "id" : 3,
+        "title" : "Pizza Oatmeal",
+        "description" : "Oats with pizza sauce",
+        "location":"Valby",
+        "when":"2021-01-29 14:30:00",
+        "maxNumberOfGuests" : 5,
+        "price" : 50,
+        "createdAt" : "2021-01-11"
+    },
+    {
+        "id" : 4,
+        "title" : "Malai kofta",
+        "description" : "vegetable meatballs in a thick sauce",
+        "location":"Taastrup",
+        "when":"2021-01-30 18:00:00",
+        "maxNumberOfGuests" : 16,
+        "price" : 250,
+        "createdAt" : "2020-12-23"
+    },
+    {
+        "id" : 5,
+        "title" : "Chicpeas curry",
+        "description" : "Whole peas with curry masala",
+        "location":"Roskilde",
+        "when":"2021-01-30 20:30:00",
+        "maxNumberOfGuests" : 7,
+        "price" : 110,
+        "createdAt" : "2020-12-29"
+    }
+]
