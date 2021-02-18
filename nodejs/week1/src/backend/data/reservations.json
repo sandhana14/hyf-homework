@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "numberOfGuests":5,
+    "mealId": 1,
+    "createdDate":"2021-01-27",
+    "contactName": "Benjamin Hughes",
+    "contactEmail": "benjamin@hughes.dk",
+    "contactPhonenumber":23374848
+  },
+  {
+    "id": 2,
+    "numberOfGuests":3,
+    "mealId": 5,
+    "createdDate":"2021-01-29",
+    "contactName": "Sandhana",
+    "contactEmail": "sandhana@hyf.dk",
+    "contactPhonenumber":99988222
+  },
+  {
+    "id": 3,
+    "numberOfGuests":15,
+    "mealId": 4,
+    "createdDate":"2021-01-29",
+    "contactName": "Mark",
+    "contactEmail": "mark@gmail.com",
+    "contactPhonenumber":65438903
+  }
+]
