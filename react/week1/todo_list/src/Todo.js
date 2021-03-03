@@ -1,30 +1,24 @@
-function Title() {
+const Title = () => {
+  return <h1>Todo list</h1>;
+};
+
+function TodoListRendering({ activity, deadline }) {
   return (
-    <>
-      <h1>Todo list</h1>
-    </>
+    <ul>
+      <li>
+        {activity},{deadline}
+      </li>
+    </ul>
   );
 }
 
-function TodoListRenedering(props) {
-  return (
-    <>
-      <ul>
-        <li>
-          {props.activity},{props.deadline}
-        </li>
-      </ul>
-    </>
-  );
-}
-
-function TodoList(props) {
+function TodoList({ todos }) {
   return (
     <>
       <Title />
-      {props.todos.map((todo) => {
+      {todos.map((todo) => {
         return (
-          <TodoListRenedering
+          <TodoListRendering
             activity={todo.activity}
             deadline={todo.deadline}
             key={todo.id}
