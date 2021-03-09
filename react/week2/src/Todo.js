@@ -1,48 +1,15 @@
 import React, { useState } from "react";
 import "./App.css";
-
-function TodoItem({ id, description, removeTodo }) {
-  const [checked, setChecked] = useState(false);
-  return (
-    <div className="Render-item">
-      <input onChange={() => setChecked(!checked)} type="checkbox"></input>
-      <p style={{ textDecoration: checked ? "line-through" : "none" }}>
-        {description}
-      </p>
-      <button onClick={() => removeTodo(id)}>Delete</button>
-    </div>
-  );
-}
-
-function Addtodo({ addTodosAfterButtonClick }) {
-  const [inputVal, setInputValue] = useState("");
-
-  const inputFieldValue = (event) => {
-    let inputValue = event.target.value;
-    setInputValue(inputValue);
-  };
-
-  return (
-    <>
-      <input
-        onChange={inputFieldValue}
-        type="text"
-        placeholder="Enter the todo item here"
-      ></input>
-      <button onClick={() => addTodosAfterButtonClick(inputVal)}>
-        Add Todo item
-      </button>
-    </>
-  );
-}
+import Addtodo from "./Addtodo";
+import TodoItem from "./TodoItem";
 
 function RenderTodo({ todos }) {
   const [currentTodo, setCurrentTodo] = useState(todos);
 
   const removeTodo = (itemIdToRemove) => {
-    const filteredItems = currentTodo.filter((data) => {
-      return data.id !== itemIdToRemove;
-    });
+    const filteredItems = currentTodo.filter(
+      (data) => data.id !== itemIdToRemove
+    );
     setCurrentTodo(filteredItems);
   };
 
@@ -50,7 +17,7 @@ function RenderTodo({ todos }) {
     setCurrentTodo((prev) => {
       if (inputVal) {
         const idValue = prev.length + 1;
-        return prev.concat({ id: idValue, description: inputVal });
+        return [...prev, { id: idValue, description: inputVal }];
       } else {
         return prev;
       }
