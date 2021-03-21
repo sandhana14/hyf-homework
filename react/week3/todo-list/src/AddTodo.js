@@ -20,9 +20,7 @@ function Addtodo({ addTodosAfterButtonClick }) {
     return yyyy + "-" + mm + "-" + dd;
   };
 
-  const error = () => {
-    return "Enter the current date or above in the deadline field!!!!!";
-  };
+  const error = "Enter the current date or above in the deadline field!!!!!";
 
   const onChangeInputDeadlineValue = (event) => {
     if (event.target.value >= currentdate()) {
@@ -32,6 +30,12 @@ function Addtodo({ addTodosAfterButtonClick }) {
       setDeadline("");
       setValidDate(!validDate);
     }
+  };
+
+  const onAddTodo = () => {
+    addTodosAfterButtonClick(description, deadline);
+    setDescription("");
+    setDeadline("");
   };
 
   return (
@@ -60,17 +64,10 @@ function Addtodo({ addTodosAfterButtonClick }) {
         ></input>
       </div>
 
-      {!validDate && <h3 className="error-tag">{error()}</h3>}
+      {!validDate && <h3 className="error-tag">{error}</h3>}
 
       <div>
-        <button
-          onClick={() => {
-            addTodosAfterButtonClick(description, deadline);
-            setDescription("");
-            setDeadline("");
-          }}
-          className="add-button"
-        >
+        <button onClick={onAddTodo} className="add-button">
           Add Todo item
         </button>
       </div>

@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem";
 import Addtodo from "./AddTodo";
 import BorderComponent from "./BorderComponent";
 
-const RenderTodos = ({ todosArray }) => {
+const TodoList = ({ todosArray }) => {
   const [currentTodos, setCurrentTodos] = useState(todosArray);
 
   const addTodosAfterButtonClick = (descriptionValue, deadlineValue) => {
@@ -62,4 +62,4 @@ const RenderTodos = ({ todosArray }) => {
   );
 };
 
-export default RenderTodos;
+export default TodoList;

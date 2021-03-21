@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import RenderTodos from "./RenderTodos";
+import TodoList from "./RenderTodos";
 
 const Todo_API_URL =
   "https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw";
@@ -15,7 +15,7 @@ const FetchTodos = () => {
       });
   }, []);
 
-  return <div>{todos.length > 0 && <RenderTodos todosArray={todos} />}</div>;
+  return <div>{todos.length > 0 && <TodoList todosArray={todos} />}</div>;
 };
 
 export default FetchTodos;
