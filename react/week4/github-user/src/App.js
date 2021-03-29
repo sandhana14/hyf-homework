@@ -1,5 +1,5 @@
 import "./App.css";
-import FetchDataContext from "./FetchDataContext";
+import UsersList from "./FetchDataContext";
 import HackYourFutureRepos from "./GithubRepos";
 import GithubUserProvider from "./GithubStates";
 
@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <div className="user column-one">
         <GithubUserProvider>
-          <FetchDataContext />
+          <UsersList />
         </GithubUserProvider>
       </div>
 

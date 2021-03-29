@@ -1,7 +1,8 @@
 import { useContext, useEffect } from "react";
 import { GithubUserContext } from "./GithubStates";
+import useDebounce from "./Use-Debounce";
 
-const FetchDataContext = () => {
+const UsersList = () => {
   const GithubUserContextValue = useContext(GithubUserContext);
 
   const onChangeInputHandle = (event) => {
@@ -9,12 +10,12 @@ const FetchDataContext = () => {
     GithubUserContextValue.setInputValue(event.target.value);
   };
 
-  const githubFetchApi = () => {
-    if (GithubUserContextValue.inputValue) {
+  const debouncedInputValue = useDebounce(GithubUserContextValue.inputValue);
+
+  const searchGithubUsers = () => {
+    if (debouncedInputValue) {
       GithubUserContextValue.setIsLoading(true);
-      fetch(
-        `https://api.github.com/search/users?q=${GithubUserContextValue.inputValue}`
-      )
+      fetch(`https://api.github.com/search/users?q=${debouncedInputValue}`)
         .then((response) => response.json())
         .then((data) => {
           GithubUserContextValue.setIsLoading(false);
@@ -25,13 +26,14 @@ const FetchDataContext = () => {
           } else {
             GithubUserContextValue.setmessage("No results......");
           }
-        });
+        })
+        .catch((error) => GithubUserContextValue.setmessage(error));
     }
   };
 
   useEffect(() => {
-    githubFetchApi();
-  }, [GithubUserContextValue.inputValue]);
+    searchGithubUsers();
+  }, [debouncedInputValue]);
 
   return (
     <div>
@@ -57,4 +59,4 @@ const FetchDataContext = () => {
   );
 };
 
-export default FetchDataContext;
+export default UsersList;
