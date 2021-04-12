@@ -1,5 +1,7 @@
 Carrot
 Beans
-Beetroot
+Brinjal
 Cabbage
 Potatoes
+Onion 
+Cauliflower
